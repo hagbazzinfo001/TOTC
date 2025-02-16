@@ -1,0 +1,91 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 30px;
+  width: 90%;
+  margin: auto;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+#second-nav-div,
+ul,
+#useer,
+#first-nav-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#second-nav-div {
+  gap: 30px;
+}
+#useer {
+  gap: 10px;
+}
+/* #myDropdown{
+    display: none;
+     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+ } */
+
+.dropdown {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.dropdown.show {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: #5b5b5b;
+}
+ul {
+  gap: 40px;
+  color: #5b5b5b;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.44px;
+  list-style: none;
+}
+#lina {
+  color: #000;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.36px;
+}
+#imge-div {
+  border-radius: 50%;
+  width: 63px;
+  height: 63px;
+  flex-shrink: 0;
+  background: lightgray -13.75px -4.694px / 125% 161.839% no-repeat;
+}
+#first-nav-div p {
+  color: #5b5b5b;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.28px;
+  position: absolute;
+  left: 20px;
+}
+#first-nav-div {
+  position: relative;
+}

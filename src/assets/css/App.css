@@ -1,0 +1,98 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #252641;
+  padding: 30px;
+  color: #b2b3cf;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  /* gap: 200px; */
+  line-height: normal;
+  letter-spacing: 0.88px;
+}
+button {
+  border-radius: 60px;
+  background: #49bbbd;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+  width: 179px;
+  height: 60px;
+  flex-shrink: 0;
+}
+input {
+  width: 400px;
+  height: 60px;
+  padding-inline: 40px;
+  border-radius: 80px;
+  border: 1px solid #83839a;
+  background-color: inherit;
+  font-size: 20px;
+}
+:placeholder-shown {
+  padding-left: 40px;
+}
+#about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: #b2b3cf;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.88px;
+}
+.border {
+  padding-right: 20px;
+  border-right: 1px solid #626381;
+}
+#newletter,
+.zoom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.zoom > p {
+  text-align: left;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.88px;
+}
+.zoom > div {
+  background: url(/src/Polygon\ 2.svg) no-repeat center;
+  width: fit-content;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.28px;
+  /* padding: 1rem; */
+  /* margin-block:100px ; */
+  padding:30px ;
+
+ 
+}
+ 
