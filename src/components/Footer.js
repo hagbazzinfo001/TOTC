@@ -22,7 +22,7 @@ import "../assets/css/App.css";
           <p className="border">Privacy Policy</p>
           <p>Terms & Conditions</p>
         </section>
-        <p>&copy;2021 Class Technologies Inc.</p>
+        <p id="copy">&copy;2021 Class Technologies Inc.</p>
       </footer>
     </div>
   );

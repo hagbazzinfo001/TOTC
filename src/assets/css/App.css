@@ -56,6 +56,7 @@ input {
   line-height: normal;
   letter-spacing: 0.88px;
 }
+
 .border {
   padding-right: 20px;
   border-right: 1px solid #626381;
@@ -95,4 +96,73 @@ input {
 
  
 }
+@media (max-width:800px) {
+  #about, #copy {
+    
+     font-size: 16px;
  
+  }
+  #newletter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+#newletter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+#newletter input {
+  width: 400px;
+  height: 60px;
+  padding-inline: 40px;
+  border-radius: 80px;
+  border: 1px solid #83839a;
+  background-color: inherit;
+  font-size: 20px;
+}
+
+#newletter button {
+  border-radius: 60px;
+  background: #49bbbd;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+  width: 179px;
+  height: 60px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 800px) {
+  #newletter {
+    flex-direction: row;
+    gap: 10px; /* Add some space between input and button */
+  }
+
+  #newletter input {
+    width: 60%; /* Adjust width for mobile */
+    font-size: 16px; /* Reduce font size for mobile */
+  }
+
+  #newletter button {
+    width: 36%; /* Adjust width for mobile */
+    font-size: 16px; /* Reduce font size for mobile */
+  }
+  footer {
+ 
+    padding: 10px;
+ 
+  }
+}

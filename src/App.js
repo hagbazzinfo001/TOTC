@@ -9,7 +9,8 @@ import NoPage from "./pages/Nopage";
 import Contact from "./pages/Contact";
 import Pricing from "./components/Pricing";
 import Carousal from "./components/Carousal";
-
+import Login from './pages/login'
+import Register from "./pages/Register";
 function App() {
   return (
     <>
@@ -19,6 +20,8 @@ function App() {
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/carousal" element={<Carousal />} />
+      <Route path="/login" element={<Login/>} />
+      <Route path="/register" element={<Register/>} />
 
       <Route path="/Pricing" element={<Pricing/>} />
       <Route path="*" element={<NoPage />} />

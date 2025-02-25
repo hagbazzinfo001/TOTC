@@ -166,6 +166,24 @@
   padding: 15px;
 }
 @media (max-width:800px) {
+  #coach h3, #online-coach h4 {
+   
+    font-size:22px;
+    }
+    #coach p {
+       
+      font-size: 17px;
+      font-weight: 300;
+       
+    }
+    #coach button {
+     font-size: 18px;
+    }
+    #online-coach {
+     
+      gap: 0px;
+ 
+    }
   #app {
    
     width: 90%;
@@ -378,6 +396,20 @@ border: 1px solid black;
 
 
  }
+ @media (max-width:800px) {
+  #laptop-ss, #price-content{
+    display: flex;
+    flex-direction: column;
+       }
+        #price-content{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+           }
+     #afford{
+      font-size: 30px;
+     }
+ }
  .button-text{
   border-radius: 12px;
 background: #49BBBD;
@@ -461,6 +493,18 @@ gap: 50px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+@media (max-width:800px) {
+  #testimony-carousel>p {
+ 
+    font-size: 26px;
+ 
+  }  
+  
+#testimony-carousel {
+ 
+gap: 10px;
+ }
 }
 
 .slick-slide {
