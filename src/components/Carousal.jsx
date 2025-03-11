@@ -76,7 +76,7 @@ const TestimonyCarousel = () => {
           <p>APP is available for free</p>
            <div>
             <Link to="https://apps.apple.com" target="_blank" rel="noopener noreferrer" className="app-link">
-            <img src= {googlePlay}alt="Download on the Apple App Store" /> IOS APP
+            <img src= {googlePlay} alt="Download on the Apple App Store" /> IOS APP
             </Link>
             
             <Link to="https://play.google.com/store" target="_blank" rel="noopener noreferrer" className="app-link">
