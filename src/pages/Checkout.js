@@ -8,10 +8,22 @@ import Amex from "../assets/images/Amex.svg";
 import "../assets/css/checkout.css";
 import confident from "../assets/images/confident.svg";
 import Summary from "../components/Summary";
+import fifty from "../assets/images/50.svg";  
+import twenty from "../assets/images/20.svg";
+import ten from "../assets/images/10.svg";
+import Maindisx from "../components/Maindisx";
 
 
 
 
+
+const Discount = [
+  { imgSrc: fifty, span: "Lorem ipsum dollar...", paragraph: "Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor", dollar: "50%"},
+  { imgSrc: ten, span: "Lorem ipsum dollar...", paragraph: "Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor", dollar: "10%"},
+  { imgSrc: twenty, span: "Lorem ipsum dollar...", paragraph: "Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor", dollar: "50%"},
+
+  
+];
 const Simon = [
   { imgSrc: confident, span: "Lorem ipsum dollar...", paragraph: "adipising elit, sed do eiusmod tempor", dollar: "24.69"},
   { imgSrc: confident, span: "Lorem ipsum dollar...", paragraph: "sed do eiusmod tempor adipising elit", dollar: "34.69"},
@@ -112,34 +124,35 @@ function Checkout(props) {
               <div className="card-container">
                 {cardTypes.map((card, index) => (
                   <div key={index} className="card-item">
-                    <img src={card.src} alt={card.alt}  style={{ width: '100px', height:"50px" }}/>
+                    <img src={card.src} alt={card.alt}  id="cardtype"/>
                   </div>
                 ))}
               </div>
               <form action="" method="post" onSubmit={handleSubmit}>
+                <div>
                 <label htmlFor="nameOnCard" className="real-p">Name on Card</label>
                 <input type="text" name="nameOnCard" id="nameOnCard" placeholder="Enter name on Card"   value={formData.nameOnCard}
                   onChange={handleInputChange} required />
+                </div>
+                <div>
                 <label htmlFor="cardNumber" className="real-p">Card Number</label>
                 <input type="text" name="cardNumber" id="cardNumber"  placeholder="Enter Card Number"   value={formData.cardNumber}
                   onChange={handleInputChange}  inputMode="numeric" maxLength="19"   onInput={handleNumber} required/>
                                   {errors.cardNumber && <p className="error">{errors.cardNumber}</p>}
 
+                </div>
+               
                 <section id="card-info">
 
-                
+          
                   <div>
-                  <label htmlFor="expirationDate" className="real-p">Expiration Date ( MM/YY )</label>
+                  <label htmlFor="expirationDate" className="real-p">Expiration Date</label>
                   <input type="text" name="expirationDate" id="expirationDate" placeholder="Enter Expiration Date (MM/YY)"   value={formData.expirationDate}
                       onChange={handleInputChange}     maxLength="5"
                       onInput={handleExpirationDate}  required/>
                             {errors.expirationDate && <p className="error">{errors.expirationDate}</p>}
 
-                  <div id="box">
-                  <input type="checkbox" name="" id="check-box" />
-                  <p className="save">Save my information for faster checkout</p>
-
-                  </div>
+                
                     
                   </div>
                   <div>
@@ -147,9 +160,14 @@ function Checkout(props) {
                   <input type="text" name="cvc" id="cvc" placeholder="Enter CVC"   value={formData.cvc}
                       onChange={handleInputChange}  inputMode="numeric" maxLength="4"  onInput={handleNumber}  required />
                             {errors.cvc && <p className="error">{errors.cvc}</p>}
+                  </div>
+                  
+                </section>
+                <div id="box" >
+                  <input type="checkbox" name="" id="check-box" />
+                  <p className="save">Save my information for faster checkout</p>
 
                   </div>
-                </section>
                 <button type="submit" id="submit" >Confirm Payment</button>
               </form>
             </div>
@@ -186,8 +204,26 @@ function Checkout(props) {
           </div>
         </div>
         <div id="second-main">
-          
+          <div id="second-main-dic">
+          <p>Top Education offers and deals are listed here</p>
+          <p>
+          See all
+          </p>
+          </div>
+         <div id="Discount">
+         {Discount.map((disx, index) => (
+          <Maindisx
+            key={index}
+            imgSrc={disx.imgSrc}
+            paragraph={disx.paragraph}
+            dollar={disx.dollar}
+            skin={disx.span}
+           />
+        ))}
+
+         </div>
         </div>
+         
       </main>
       <Footer />
     </div>
