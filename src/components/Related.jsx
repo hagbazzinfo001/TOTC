@@ -1,6 +1,4 @@
-import React from "react";
 //  import laptop from "../assets/images/bookmark_laptop.svg";
-import gender from "../assets/images/gender.svg";
 import user from "../assets/images/userimage.svg";
 import eye from "../assets/images/EYE (2).svg";
 //   import hand from "../assets/images/hand.svg";
@@ -117,7 +115,10 @@ width: 40px;
               <img src={item.imgSrc} alt={item.para} id="imag" />
 
               <div className="million">
-                <p className="hrrt">Class adds $30 million to its balance sheet for a Zoom-friendly edtech solution</p>
+                <p className="hrrt">
+                  Class adds $30 million to its balance sheet for a
+                  Zoom-friendly edtech solution
+                </p>
                 <div className="lina-div">
                   <img
                     src={user}
