@@ -2,12 +2,14 @@ import React from "react";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Body from "../components/Body";
+import { useAuthGuard } from "../hooks/useAuthGuard";
 
 function Home(props) {
+  useAuthGuard();
   return (
     <div>
       <Nav />
-      <Body/>
+      <Body />
       <Footer />
     </div>
   );

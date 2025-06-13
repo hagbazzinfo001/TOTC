@@ -152,8 +152,7 @@ function Pricing() {
           <div id="div-online-coach">
             {sectionTexts.map((text, index) => (
               <section key={index}>
-                <div>
-                  <div className="lorem">
+                   <div className="lorem">
                     <div>
                       <img src={BG} alt="BG" />
                       <p style={{padding:"10px"}}>{text}</p> {/* Unique text for each section */}
@@ -180,8 +179,7 @@ function Pricing() {
                     elit, sed do eiusmod tempos Lorem ipsum dolor sitamet,
                     consectetur adipiscing elit, sed do eiusmod tempor
                   </p>
-                </div>
-              </section>
+               </section>
             ))}
           </div>
         </div>

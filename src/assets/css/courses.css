@@ -1,0 +1,77 @@
+.courses-container{
+    padding: 30px 50px;
+}
+#coach {
+    border-radius: 37px;
+    background: #252641;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    width: 85%;
+    margin: auto;
+    margin-block: 30px;
+  }
+  #coach p {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 180%; /* 43.2px */
+    letter-spacing: 0.48px;
+    text-align: center;
+  }
+  #coach h3 {
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 600;
+  }
+  #coach button {
+    border-radius: 12px;
+    background: #49bbbd;
+    padding-inline: 20px;
+    width: fit-content;
+  }
+  .bookmark-conEr{
+    padding:  50px;
+    background-color: rgba(157, 204, 255, 0.2); /* Updated with opacity */
+   }
+   @media  (max-width: 768px) {
+    .bookmark-conEr{
+      padding:  10px;
+      }
+      .courses-container{
+        padding: 30px 10px;
+    }
+    #coach {
+      
+      width: 100%;
+       margin-block: 30px;
+    }
+    #coach p {
+       font-size: 20px;
+     
+    }
+    #coach h3 {
+       font-size: 26px;
+     }
+   }
+   .pagination{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+   align-items: center;
+   }
+   .pagination img{
+    cursor: pointer;
+    padding: 20px;
+     border-radius: 4px;
+     background-color: rgba(73, 187, 189, 0.50);
+     transition: background-color 0.3s ease; /* Smooth transition */
+    }
+    
+    .pagination img.active {
+      background-color: #49BBBD; /* Background color when clicked */
+    }

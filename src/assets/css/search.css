@@ -1,0 +1,72 @@
+.Creator-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 containers per row on large screens */
+  gap: 40px; /* Add spacing between grid items */
+  width: 90%;
+  margin: 30px auto; /* Center the grid container */
+}
+.real{
+display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+   
+  padding: 20px; /* Padding inside the container */
+ }
+.real h1{
+  color: #000;
+font-family: Poppins;
+font-size: 30px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.6px;
+}
+.real h2{
+  color: #49BBBD;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.real.ss {
+  display: none; /* Hide by default */
+}
+
+@media (max-width: 768px) {
+  .real.ss {
+    display: flex; /* Show only on small screens */
+  }
+  .s2s {
+    display: none; /* Show only on small screens */
+  }
+}
+@media (max-width: 768px) {
+  .Creator-container {
+    grid-template-columns: 1fr; /* 1 container per row on small screens */
+  }
+  
+  
+  .real h1{
+ 
+  font-size: 16px;
+  
+  }
+  .real h2{
+    color: #49BBBD;
+  font-family: Poppins;
+  font-size: 12px;
+ 
+  }
+  .real{
+    
+      width: 99%;
+      margin: auto;
+       
+    
+     } 
+
+}

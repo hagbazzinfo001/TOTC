@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#header {
+  background-color: #49bbbd;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.hour {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 400;
+}
+.XD {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 34px;
+  font-weight: 400;
+}
+#main-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  width: 100%;
+  padding: 20px 20px 50px 20px;
+  background: rgba(157, 204, 255, 0.2);
+}
+#course-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  gap: 20px;
+
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.span_grid {
+  grid-column: 1 / -1;
+}
+textarea {
+  resize: none;
+  width: 100%;
+  outline: none;
+}
+#course-form input:placeholder-shown {
+  color: #9d9b9b;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+}
+.input_div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+#course-form * {
+  width: 100%;
+}
+#course-form input,
+#course-form textarea {
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  background: rgba(217, 217, 217, 0);
+  padding: 14px;
+}
+#course-form input[type="email"] {
+  padding: 14px;
+}
+#course-form input[type="datetime-local"] {
+  padding: 8px 14px;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+  color: #9d9b9b;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+input[type="datetime-local"]:focus {
+  border: 2px solid #49bbbd;
+  box-shadow: 0 0 4px #49bbbd33;
+}
+
+#course-form input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.5) sepia(1) saturate(5) hue-rotate(160deg);
+  cursor: pointer;
+}
+#course-form label {
+  color: #5b5b5b;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.submit-btn {
+  width: 40% !important;
+  background-color: #49bbbd;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  grid-column: 2;
+  justify-self: end;
+  transition: background-color 0.3s, transform 0.2s;
+}
+#section1 {
+  display: flex !important;
+  justify-self: flex-start !important;
+  flex-direction: column;
+  align-items: flex-start !important;
+  gap: 20px;
+}
+.main-style {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* gap: 20px; */
+  width: 100%;
+  flex-wrap: nowrap; /* prevents wrapping */
+
+  height: fit-content;
+}
+.main-style > div:first-child {
+  width: 30%; /* CalSide */
+}
+
+.main-style > div:last-child {
+  width: 70%; /* Course details section */
+}
+
+@media (max-width: 600px) {
+  #course-form input[type="datetime-local"] {
+    font-size: 16px;
+    padding: 6px 10px;
+  }
+}
