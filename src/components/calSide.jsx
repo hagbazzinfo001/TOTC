@@ -129,19 +129,16 @@ function CalSide() {
           animation: fadeInUp 0.5s ease forwards;
           opacity: 0;
         }
-
         .lesson-card:hover {
           transform: scale(1.02);
           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
-
         .scrollable-container {
           max-height: 100vh;
           overflow-y: auto;
           padding-right: 10px;
           scroll-behavior: smooth;
         }
-
         .scrollable-container::-webkit-scrollbar {
           width: 6px;
         }
