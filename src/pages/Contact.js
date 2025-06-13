@@ -1,13 +1,12 @@
-import React from "react";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 
-function Contact(props) {
+function Contact() {
   return (
     <div>
-      <Nav/>
+      <Nav />
       <h1>Contact Us now</h1>;
-      <Footer/>
+      <Footer />
     </div>
   );
 }

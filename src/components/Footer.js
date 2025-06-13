@@ -1,11 +1,10 @@
-import React from "react";
 import "../assets/css/App.css";
- function Footer(props) {
+function Footer() {
   return (
     <div>
       <footer className="App">
         <div className="zoom">
-           <div>
+          <div>
             <p>TOTC</p>
           </div>
           <p>
@@ -14,7 +13,7 @@ import "../assets/css/App.css";
         </div>
         <p>Subscribe to get our Newsletter</p>
         <div id="newletter">
-          <input type="email" placeholder="Your Email"/>
+          <input type="email" placeholder="Your Email" />
           <button>Subscribe</button>
         </div>
         <section id="about">

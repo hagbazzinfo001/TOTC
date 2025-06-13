@@ -1,11 +1,5 @@
-import React from 'react';
-
-function landing(props) {
-    return (
-        <div>
-            
-        </div>
-    );
+function landing() {
+  return <div></div>;
 }
 
 export default landing;

@@ -1,11 +1,10 @@
-import React from "react";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Bookmark from "../components/Bookmark";
 import Pagination from "../components/Pagination";
 import Related from "../components/Related";
 
-function Blog(props) {
+function Blog() {
   return (
     <div>
       <style>

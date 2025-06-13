@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import left from "../assets/images/pageleft.svg";
 import right from "../assets/images/pageright.svg";
 import "../assets/css/courses.css";
